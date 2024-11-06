@@ -1,0 +1,1009 @@
+MinGW_DLL\compile.bat "C:\Users\Kirill\Desktop\Пневмосистема\src\control_system"
+
+D:\SimInTech64\bin\CodeTemplates\MinGW_DLL>REM Setting Paths for the MinGW Compiler (GCC) 
+
+D:\SimInTech64\bin\CodeTemplates\MinGW_DLL>del /q bin\*.* 
+
+D:\SimInTech64\bin\CodeTemplates\MinGW_DLL>REM Set the module build architecture depending on the bitness of the bootloader 
+
+D:\SimInTech64\bin\CodeTemplates\MinGW_DLL>IF "64" == "64" (
+set path=..\..\..\mingw64\bin\  
+ gcc -shared -o bin\example_cpp.dll -m64 -s src\example.c src\example.def -Wl,--add-stdcall-alias -fpic -fpack-struct=1 -Wconversion 
+) 
+In file included from src\example.c:5:
+src\prog.inc: In function 'RUN_FUNC':
+src\prog.inc:218:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  218 | if(isfinite(consts->control_systemv155_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:221:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  221 | if(isfinite(consts->control_systemv151_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:224:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  224 | if(isfinite(consts->control_systemv152_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:227:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  227 | if(isfinite(consts->control_systemv156_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:230:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  230 | if(isfinite(consts->control_systemv153_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:233:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  233 | if(isfinite(consts->control_systemv157_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:236:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  236 | if(isfinite(consts->control_systemv154_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:239:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  239 | if(isfinite(consts->control_systemv158_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:269:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  269 | if(isfinite(consts->control_systemv91_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:272:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  272 | if(isfinite(consts->control_systemv90_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:275:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  275 | if(isfinite(consts->control_systemv89_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:278:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  278 | if(isfinite(consts->control_systemv88_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:281:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  281 | if(isfinite(consts->control_systemv87_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:284:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  284 | if(isfinite(consts->control_systemv86_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:287:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  287 | if(isfinite(consts->control_systemv85_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:290:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  290 | if(isfinite(consts->control_systemv84_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:300:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  300 | if(isfinite(consts->control_systemv18_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:303:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  303 | if(isfinite(consts->control_systemv14_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:306:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  306 | if(isfinite(consts->control_systemv15_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:309:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  309 | if(isfinite(consts->control_systemv19_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:312:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  312 | if(isfinite(consts->control_systemv16_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:315:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  315 | if(isfinite(consts->control_systemv20_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:318:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  318 | if(isfinite(consts->control_systemv17_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:321:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  321 | if(isfinite(consts->control_systemv21_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:370:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  370 | if(isfinite(consts->control_systemv296_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:373:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  373 | if(isfinite(consts->control_systemv295_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:376:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  376 | if(isfinite(consts->control_systemv294_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:379:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  379 | if(isfinite(consts->control_systemv293_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:382:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  382 | if(isfinite(consts->control_systemv292_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:385:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  385 | if(isfinite(consts->control_systemv291_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:388:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  388 | if(isfinite(consts->control_systemv290_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:391:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  391 | if(isfinite(consts->control_systemv289_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:394:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  394 | if(isfinite(consts->control_systemv288_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:397:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  397 | if(isfinite(consts->control_systemv287_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:400:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  400 | if(isfinite(consts->control_systemv286_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:403:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  403 | if(isfinite(consts->control_systemv285_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:406:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  406 | if(isfinite(consts->control_systemv284_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:409:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  409 | if(isfinite(consts->control_systemv283_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:412:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  412 | if(isfinite(consts->control_systemv282_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:415:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  415 | if(isfinite(consts->control_systemv281_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:418:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  418 | if(isfinite(consts->control_systemv280_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:421:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  421 | if(isfinite(consts->control_systemv279_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:424:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  424 | if(isfinite(consts->control_systemv278_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:427:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  427 | if(isfinite(consts->control_systemv277_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:430:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  430 | if(isfinite(consts->control_systemv276_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:433:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  433 | if(isfinite(consts->control_systemv275_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:436:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  436 | if(isfinite(consts->control_systemv274_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:439:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  439 | if(isfinite(consts->control_systemv273_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:442:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  442 | if(isfinite(consts->control_systemv272_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:445:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  445 | if(isfinite(consts->control_systemv271_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:448:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  448 | if(isfinite(consts->control_systemv270_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:451:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  451 | if(isfinite(consts->control_systemv269_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:454:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  454 | if(isfinite(consts->control_systemv268_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:457:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  457 | if(isfinite(consts->control_systemv267_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:460:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  460 | if(isfinite(consts->control_systemv266_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:463:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  463 | if(isfinite(consts->control_systemv265_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:466:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  466 | if(isfinite(consts->control_systemv264_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:469:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  469 | if(isfinite(consts->control_systemv263_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:472:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  472 | if(isfinite(consts->control_systemv262_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:475:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  475 | if(isfinite(consts->control_systemv261_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:478:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  478 | if(isfinite(consts->control_systemv260_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:481:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  481 | if(isfinite(consts->control_systemv259_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:484:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  484 | if(isfinite(consts->control_systemv258_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:487:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  487 | if(isfinite(consts->control_systemv257_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:490:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  490 | if(isfinite(consts->control_systemv256_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:493:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  493 | if(isfinite(consts->control_systemv255_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:496:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  496 | if(isfinite(consts->control_systemv254_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:499:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  499 | if(isfinite(consts->control_systemv253_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:502:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  502 | if(isfinite(consts->control_systemv252_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:505:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  505 | if(isfinite(consts->control_systemv251_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:508:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  508 | if(isfinite(consts->control_systemv250_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:511:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  511 | if(isfinite(consts->control_systemv249_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:514:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  514 | if(isfinite(consts->control_systemv306_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:517:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  517 | if(isfinite(consts->control_systemv305_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:520:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  520 | if(isfinite(consts->control_systemv304_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:523:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  523 | if(isfinite(consts->control_systemv303_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:526:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  526 | if(isfinite(consts->control_systemv302_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:529:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  529 | if(isfinite(consts->control_systemv301_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:532:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  532 | if(isfinite(consts->control_systemv300_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:535:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  535 | if(isfinite(consts->control_systemv299_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:538:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  538 | if(isfinite(consts->control_systemv298_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:541:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  541 | if(isfinite(consts->control_systemv297_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:544:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  544 | if(isfinite(consts->control_systemv316_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:547:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  547 | if(isfinite(consts->control_systemv315_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:550:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  550 | if(isfinite(consts->control_systemv314_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:553:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  553 | if(isfinite(consts->control_systemv313_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:556:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  556 | if(isfinite(consts->control_systemv312_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:559:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  559 | if(isfinite(consts->control_systemv311_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:562:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  562 | if(isfinite(consts->control_systemv310_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:565:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  565 | if(isfinite(consts->control_systemv309_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:568:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  568 | if(isfinite(consts->control_systemv308_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:571:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  571 | if(isfinite(consts->control_systemv307_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:593:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  593 | if(isfinite(consts->control_systemv207_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:596:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  596 | if(isfinite(consts->control_systemv135_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:599:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  599 | if(isfinite(consts->control_systemv208_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:602:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  602 | if(isfinite(consts->control_systemv136_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:605:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  605 | if(isfinite(consts->control_systemv209_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:608:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  608 | if(isfinite(consts->control_systemv137_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:611:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  611 | if(isfinite(consts->control_systemv210_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:614:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  614 | if(isfinite(consts->control_systemv138_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:617:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  617 | if(isfinite(consts->control_systemv211_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:620:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  620 | if(isfinite(consts->control_systemv133_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:623:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  623 | if(isfinite(consts->control_systemv212_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:626:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  626 | if(isfinite(consts->control_systemv134_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:636:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  636 | if(isfinite(consts->control_systemv142_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:639:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  639 | if(isfinite(consts->control_systemv141_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:642:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  642 | if(isfinite(consts->control_systemv140_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:645:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  645 | if(isfinite(consts->control_systemv139_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:667:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  667 | if(isfinite(consts->control_systemv31_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:670:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  670 | if(isfinite(consts->control_systemv33_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:673:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  673 | if(isfinite(consts->control_systemv30_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:676:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  676 | if(isfinite(consts->control_systemv32_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:679:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  679 | if(isfinite(consts->control_systemv35_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:682:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  682 | if(isfinite(consts->control_systemv37_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:685:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  685 | if(isfinite(consts->control_systemv34_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:688:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  688 | if(isfinite(consts->control_systemv36_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:691:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  691 | if(isfinite(consts->control_systemv39_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:694:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  694 | if(isfinite(consts->control_systemv41_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:697:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  697 | if(isfinite(consts->control_systemv38_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:700:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  700 | if(isfinite(consts->control_systemv40_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:703:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  703 | if(isfinite(consts->control_systemv43_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:706:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  706 | if(isfinite(consts->control_systemv45_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:709:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  709 | if(isfinite(consts->control_systemv42_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:712:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  712 | if(isfinite(consts->control_systemv44_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:715:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  715 | if(isfinite(consts->control_systemv47_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:718:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  718 | if(isfinite(consts->control_systemv49_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:721:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  721 | if(isfinite(consts->control_systemv46_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:724:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  724 | if(isfinite(consts->control_systemv48_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:727:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  727 | if(isfinite(consts->control_systemv51_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:730:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  730 | if(isfinite(consts->control_systemv53_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:733:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  733 | if(isfinite(consts->control_systemv50_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:736:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  736 | if(isfinite(consts->control_systemv52_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:739:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  739 | if(isfinite(consts->control_systemv55_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:742:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  742 | if(isfinite(consts->control_systemv57_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:745:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  745 | if(isfinite(consts->control_systemv54_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:748:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  748 | if(isfinite(consts->control_systemv56_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:751:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  751 | if(isfinite(consts->control_systemv59_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:754:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  754 | if(isfinite(consts->control_systemv61_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:757:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  757 | if(isfinite(consts->control_systemv58_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:760:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  760 | if(isfinite(consts->control_systemv60_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:763:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  763 | if(isfinite(consts->control_systemv62_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:766:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  766 | if(isfinite(consts->control_systemv63_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:769:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  769 | if(isfinite(consts->control_systemv65_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:772:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  772 | if(isfinite(consts->control_systemv67_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:775:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  775 | if(isfinite(consts->control_systemv64_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:778:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  778 | if(isfinite(consts->control_systemv66_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:781:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  781 | if(isfinite(consts->control_systemv69_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:784:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  784 | if(isfinite(consts->control_systemv71_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:787:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  787 | if(isfinite(consts->control_systemv68_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:790:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  790 | if(isfinite(consts->control_systemv70_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:793:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  793 | if(isfinite(consts->control_systemv72_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:796:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  796 | if(isfinite(consts->control_systemv73_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:799:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  799 | if(isfinite(consts->control_systemv75_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:802:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  802 | if(isfinite(consts->control_systemv77_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:805:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  805 | if(isfinite(consts->control_systemv74_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:808:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  808 | if(isfinite(consts->control_systemv76_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:830:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  830 | if(isfinite(consts->control_systemv160_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:833:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  833 | if(isfinite(consts->control_systemv162_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:836:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  836 | if(isfinite(consts->control_systemv159_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:839:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  839 | if(isfinite(consts->control_systemv161_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:842:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  842 | if(isfinite(consts->control_systemv164_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:845:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  845 | if(isfinite(consts->control_systemv166_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:848:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  848 | if(isfinite(consts->control_systemv163_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:851:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  851 | if(isfinite(consts->control_systemv165_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:854:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  854 | if(isfinite(consts->control_systemv168_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:857:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  857 | if(isfinite(consts->control_systemv170_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:860:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  860 | if(isfinite(consts->control_systemv167_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:863:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  863 | if(isfinite(consts->control_systemv169_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:866:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  866 | if(isfinite(consts->control_systemv172_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:869:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  869 | if(isfinite(consts->control_systemv174_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:872:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  872 | if(isfinite(consts->control_systemv171_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:875:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  875 | if(isfinite(consts->control_systemv173_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:878:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  878 | if(isfinite(consts->control_systemv176_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:881:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  881 | if(isfinite(consts->control_systemv178_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:884:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  884 | if(isfinite(consts->control_systemv175_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:887:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  887 | if(isfinite(consts->control_systemv177_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:890:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  890 | if(isfinite(consts->control_systemv180_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:893:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  893 | if(isfinite(consts->control_systemv182_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:896:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  896 | if(isfinite(consts->control_systemv179_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:899:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  899 | if(isfinite(consts->control_systemv181_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:902:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  902 | if(isfinite(consts->control_systemv184_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:905:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  905 | if(isfinite(consts->control_systemv186_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:908:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  908 | if(isfinite(consts->control_systemv183_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:911:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  911 | if(isfinite(consts->control_systemv185_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:914:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  914 | if(isfinite(consts->control_systemv188_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:917:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  917 | if(isfinite(consts->control_systemv190_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:920:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  920 | if(isfinite(consts->control_systemv187_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:923:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  923 | if(isfinite(consts->control_systemv189_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:926:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  926 | if(isfinite(consts->control_systemv191_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:929:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  929 | if(isfinite(consts->control_systemv192_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:932:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  932 | if(isfinite(consts->control_systemv194_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:935:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  935 | if(isfinite(consts->control_systemv196_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:938:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  938 | if(isfinite(consts->control_systemv193_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:941:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  941 | if(isfinite(consts->control_systemv195_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:944:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  944 | if(isfinite(consts->control_systemv198_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:947:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  947 | if(isfinite(consts->control_systemv200_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:950:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  950 | if(isfinite(consts->control_systemv197_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:953:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  953 | if(isfinite(consts->control_systemv199_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:956:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  956 | if(isfinite(consts->control_systemv201_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:959:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  959 | if(isfinite(consts->control_systemv202_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:962:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  962 | if(isfinite(consts->control_systemv204_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:965:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  965 | if(isfinite(consts->control_systemv206_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:968:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  968 | if(isfinite(consts->control_systemv203_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:971:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  971 | if(isfinite(consts->control_systemv205_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:993:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  993 | if(isfinite(consts->control_systemv78_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:996:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  996 | if(isfinite(consts->control_systemv2_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:999:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+  999 | if(isfinite(consts->control_systemv79_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1002:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1002 | if(isfinite(consts->control_systemv3_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1005:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1005 | if(isfinite(consts->control_systemv80_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1008:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1008 | if(isfinite(consts->control_systemv4_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1011:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1011 | if(isfinite(consts->control_systemv81_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1014:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1014 | if(isfinite(consts->control_systemv5_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1017:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1017 | if(isfinite(consts->control_systemv82_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1020:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1020 | if(isfinite(consts->control_systemv0_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1023:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1023 | if(isfinite(consts->control_systemv83_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1026:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1026 | if(isfinite(consts->control_systemv1_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1036:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1036 | if(isfinite(consts->control_systemv9_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1039:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1039 | if(isfinite(consts->control_systemv8_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1042:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1042 | if(isfinite(consts->control_systemv7_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1045:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1045 | if(isfinite(consts->control_systemv6_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1067:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1067 | if(isfinite(consts->control_systemv143_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1070:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1070 | if(isfinite(consts->control_systemv144_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1073:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1073 | if(isfinite(consts->control_systemv145_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1076:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1076 | if(isfinite(consts->control_systemv146_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1079:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1079 | if(isfinite(consts->control_systemv223_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1082:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1082 | if(isfinite(consts->control_systemv224_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1085:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1085 | if(isfinite(consts->control_systemv225_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1088:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1088 | if(isfinite(consts->control_systemv226_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1110:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1110 | if(isfinite(consts->control_systemv23_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1113:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1113 | if(isfinite(consts->control_systemv25_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1116:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1116 | if(isfinite(consts->control_systemv22_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1119:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1119 | if(isfinite(consts->control_systemv24_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1122:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1122 | if(isfinite(consts->control_systemv97_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1125:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1125 | if(isfinite(consts->control_systemv99_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1128:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1128 | if(isfinite(consts->control_systemv96_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1131:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1131 | if(isfinite(consts->control_systemv98_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1134:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1134 | if(isfinite(consts->control_systemv101_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1137:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1137 | if(isfinite(consts->control_systemv103_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1140:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1140 | if(isfinite(consts->control_systemv100_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1143:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1143 | if(isfinite(consts->control_systemv102_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1146:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1146 | if(isfinite(consts->control_systemv105_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1149:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1149 | if(isfinite(consts->control_systemv107_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1152:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1152 | if(isfinite(consts->control_systemv104_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1155:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1155 | if(isfinite(consts->control_systemv106_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1158:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1158 | if(isfinite(consts->control_systemv109_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1161:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1161 | if(isfinite(consts->control_systemv111_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1164:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1164 | if(isfinite(consts->control_systemv108_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1167:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1167 | if(isfinite(consts->control_systemv110_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1170:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1170 | if(isfinite(consts->control_systemv113_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1173:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1173 | if(isfinite(consts->control_systemv115_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1176:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1176 | if(isfinite(consts->control_systemv112_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1179:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1179 | if(isfinite(consts->control_systemv114_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1182:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1182 | if(isfinite(consts->control_systemv117_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1185:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1185 | if(isfinite(consts->control_systemv119_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1188:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1188 | if(isfinite(consts->control_systemv116_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1191:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1191 | if(isfinite(consts->control_systemv118_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1194:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1194 | if(isfinite(consts->control_systemv121_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1197:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1197 | if(isfinite(consts->control_systemv123_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1200:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1200 | if(isfinite(consts->control_systemv120_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1203:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1203 | if(isfinite(consts->control_systemv122_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1225:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1225 | if(isfinite(consts->control_systemv147_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1228:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1228 | if(isfinite(consts->control_systemv148_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1231:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1231 | if(isfinite(consts->control_systemv149_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1234:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1234 | if(isfinite(consts->control_systemv150_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1256:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1256 | if(isfinite(consts->control_systemv27_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1259:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1259 | if(isfinite(consts->control_systemv29_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1262:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1262 | if(isfinite(consts->control_systemv26_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1265:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1265 | if(isfinite(consts->control_systemv28_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1275:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1275 | if(isfinite(consts->control_systemv10_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1278:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1278 | if(isfinite(consts->control_systemv11_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1281:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1281 | if(isfinite(consts->control_systemv12_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1284:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1284 | if(isfinite(consts->control_systemv13_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1287:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1287 | if(isfinite(consts->control_systemv92_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1290:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1290 | if(isfinite(consts->control_systemv93_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1293:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1293 | if(isfinite(consts->control_systemv94_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1296:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1296 | if(isfinite(consts->control_systemv95_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1318:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1318 | if(isfinite(consts->control_systemv222_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1321:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1321 | if(isfinite(consts->control_systemv221_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1324:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1324 | if(isfinite(consts->control_systemv220_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1327:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1327 | if(isfinite(consts->control_systemv219_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1330:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1330 | if(isfinite(consts->control_systemv218_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1333:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1333 | if(isfinite(consts->control_systemv217_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1336:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1336 | if(isfinite(consts->control_systemv216_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1339:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1339 | if(isfinite(consts->control_systemv215_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1361:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1361 | if(isfinite(consts->control_systemv317_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1364:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1364 | if(isfinite(consts->control_systemv318_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1367:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1367 | if(isfinite(consts->control_systemv319_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1370:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1370 | if(isfinite(consts->control_systemv320_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1651:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1651 | if(isfinite(locals->control_systemv336_out_0_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src\prog.h:1414:42: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1414 | #define control_systemv369_out_0 din_vars[0]
+      |                                  ~~~~~~~~^~~
+src\prog.inc:1654:13: note: in expansion of macro 'control_systemv369_out_0'
+ 1654 | if(isfinite(control_systemv369_out_0)){
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+src\prog.h:1416:42: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1416 | #define control_systemv370_out_0 din_vars[1]
+      |                                  ~~~~~~~~^~~
+src\prog.inc:1657:13: note: in expansion of macro 'control_systemv370_out_0'
+ 1657 | if(isfinite(control_systemv370_out_0)){
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+src\prog.h:1418:42: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1418 | #define control_systemv371_out_0 din_vars[2]
+      |                                  ~~~~~~~~^~~
+src\prog.inc:1660:13: note: in expansion of macro 'control_systemv371_out_0'
+ 1660 | if(isfinite(control_systemv371_out_0)){
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1704:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1704 | if(isfinite(consts->control_systemv213_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1708:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1708 | if(isfinite(consts->control_systemv214_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1712:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1712 | if(isfinite(consts->control_systemv227_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1716:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1716 | if(isfinite(consts->control_systemv228_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1720:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1720 | if(isfinite(consts->control_systemv229_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1724:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1724 | if(isfinite(consts->control_systemv230_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1728:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1728 | if(isfinite(consts->control_systemv231_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1732:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1732 | if(isfinite(consts->control_systemv232_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1736:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1736 | if(isfinite(consts->control_systemv233_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1740:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1740 | if(isfinite(consts->control_systemv234_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1744:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1744 | if(isfinite(consts->control_systemv235_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1748:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1748 | if(isfinite(consts->control_systemv236_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1752:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1752 | if(isfinite(consts->control_systemv237_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1756:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1756 | if(isfinite(consts->control_systemv238_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1760:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1760 | if(isfinite(consts->control_systemv239_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:1764:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 1764 | if(isfinite(consts->control_systemv240_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2212:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2212 | if(isfinite(consts->control_systemv248_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2216:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2216 | if(isfinite(consts->control_systemv247_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2220:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2220 | if(isfinite(consts->control_systemv246_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2224:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2224 | if(isfinite(consts->control_systemv245_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2641:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2641 | if(isfinite(consts->control_systemv124_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2645:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2645 | if(isfinite(consts->control_systemv126_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2648:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2648 | if(isfinite(consts->control_systemv125_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2651:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2651 | if(isfinite(consts->control_systemv128_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2654:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2654 | if(isfinite(consts->control_systemv129_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2657:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2657 | if(isfinite(consts->control_systemv130_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2660:19: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2660 | if(isfinite(consts->control_systemv131_a_)){
+      |             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src\prog.inc:2881:46: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2881 | if(isfinite(locals->control_systemv421_out_0_[0])){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+src\prog.inc:2884:46: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2884 | if(isfinite(locals->control_systemv421_out_0_[1])){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+src\prog.inc:2887:46: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2887 | if(isfinite(locals->control_systemv421_out_0_[2])){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+src\prog.inc:2890:46: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+ 2890 | if(isfinite(locals->control_systemv421_out_0_[3])){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+src\state.inc: In function 'STATE_FUNC':
+src\state.inc:37:50: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+   37 | if(isfinite(state_vars->control_systemv398_out_0_[i])){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+src\state.inc:47:50: warning: conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+   47 | if(isfinite(state_vars->control_systemv399_out_0_[i])){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+
+D:\SimInTech64\bin\CodeTemplates\MinGW_DLL>IF "64" == "32" (
+set path=..\..\..\MinGW\bin\  
+ gcc -shared -o bin\example_cpp.dll -s src\example.c src\example.def -Wl,--add-stdcall-alias -fpic -fpack-struct=1 -Wconversion 
+) 
+
+D:\SimInTech64\bin\CodeTemplates\MinGW_DLL>if 0 == 9009 (
+ 
+ start ..\..\..\doc\compilerswarn.htm 
+) 
