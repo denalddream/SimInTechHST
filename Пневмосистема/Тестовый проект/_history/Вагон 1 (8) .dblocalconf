@@ -25,6 +25,7 @@
  <srvenable>`0`</srvenable>
  <sync>`0`</sync>
  <remenable>`0`</remenable>
+ <promtbydelete>`1`</promtbydelete>
  <savedb>`1`</savedb>
  <savepromt>`1`</savepromt>
  <multisearch>`0`</multisearch>
@@ -46,9 +47,14 @@
  <catsortdirection>`1`</catsortdirection>
  <groupsortcolumn>`-1`</groupsortcolumn>
  <groupsortdirection>`0`</groupsortdirection>
- <listsaddoperation>`0`</listsaddoperation>
  <sigsortcolumn>`-1`</sigsortcolumn>
  <sigsortdirection>`0`</sigsortdirection>
+ <listsaddoperation>`0`</listsaddoperation>
+ <globalfilteritemindex>`-1`</globalfilteritemindex>
+ <colwidths>
+  <type>`12`</type>
+  <value>`[90 , 240 , 90 , 60 , 80 , 100 , 110 , 50 , 140]`</value>
+ </colwidths>
  <formleft>`233`</formleft>
  <formtop>`194`</formtop>
  <formright>`1687`</formright>
