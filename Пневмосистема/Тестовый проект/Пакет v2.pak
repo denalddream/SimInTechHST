@@ -1,0 +1,61 @@
+﻿[Form]
+Rect.L=312
+Rect.T=327
+Rect.R=1339
+Rect.B=732
+ConsoleHeight=69
+WindowState=0
+ColCount=7
+ColWidth0=545
+ColWidth1=91
+ColWidth2=88
+ColWidth3=62
+ColWidth4=88
+ColWidth5=58
+ColWidth6=65
+[Common]
+Synchronize=1
+RelativePath=1
+IsRealTime=0
+TimeMash=1
+fSimpleSignalLoad=0
+formstyle=0
+restartname=
+notqueryremoveforall=0
+[Files]
+Count=11
+0=Вагон 1 (8)  UDP.prt
+1=Вагон 2 (7) UDP.prt
+2=Вагон 3 (6) UDP.prt
+3=Вагон 4 (5) UDP.prt
+4=Вагон 1 (8) .prt
+5=Вагон 2 (7).prt
+6=Вагон 3 (6).prt
+7=Вагон 4 (5).prt
+8=Все вагоны UDP.prt
+9=Все вагоны тест.prt
+10=Все вагоны.prt
+[Active]
+0=1
+1=1
+2=1
+3=1
+4=1
+5=1
+6=1
+7=1
+8=1
+9=1
+10=1
+[TimeSync]
+0=1
+1=1
+2=1
+3=1
+4=1
+5=1
+6=1
+7=1
+8=1
+9=1
+10=1

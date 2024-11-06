@@ -1,0 +1,49 @@
+﻿[Form]
+Rect.L=672
+Rect.T=602
+Rect.R=1795
+Rect.B=915
+ConsoleHeight=69
+WindowState=0
+ColCount=7
+ColWidth0=525
+ColWidth1=91
+ColWidth2=88
+ColWidth3=62
+ColWidth4=88
+ColWidth5=58
+ColWidth6=108
+[Common]
+Synchronize=0
+RelativePath=1
+IsRealTime=1
+TimeMash=1
+fSimpleSignalLoad=0
+formstyle=0
+restartname=
+notqueryremoveforall=0
+[Files]
+Count=7
+0=Алгоритмы.prt
+1=Управление.prt
+2=Все вагоны.prt
+3=Вагон 1 (8) .prt
+4=Вагон 2 (7).prt
+5=Вагон 3 (6).prt
+6=Вагон 4 (5).prt
+[Active]
+0=0
+1=0
+2=0
+3=0
+4=1
+5=1
+6=1
+[TimeSync]
+0=1
+1=1
+2=1
+3=1
+4=1
+5=1
+6=1
