@@ -1,8 +1,8 @@
 ﻿[Form]
-Rect.L=312
-Rect.T=327
-Rect.R=1339
-Rect.B=732
+Rect.L=375
+Rect.T=333
+Rect.R=1402
+Rect.B=738
 ConsoleHeight=69
 WindowState=0
 ColCount=7
@@ -16,7 +16,7 @@ ColWidth6=65
 [Common]
 Synchronize=1
 RelativePath=1
-IsRealTime=1
+IsRealTime=0
 TimeMash=1
 fSimpleSignalLoad=0
 formstyle=0
