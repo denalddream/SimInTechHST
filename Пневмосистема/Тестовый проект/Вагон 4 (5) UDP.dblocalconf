@@ -2,8 +2,8 @@
 <Header>
 <dbconfig>
  <dbsettingsplace>`0`</dbsettingsplace>
- <catfiltercaps>`Все (* )`#13#10</catfiltercaps>
- <catfiltervals>`*`#13#10</catfiltervals>
+ <catfiltercaps>`Все (* )`#13#10`Вагон`#13#10`Вагон(*)`#13#10`Все (Вагон* )`#13#10</catfiltercaps>
+ <catfiltervals>`*`#13#10`Вагон`#13#10`Вагон(*)`#13#10`Все (Вагон* )`#13#10</catfiltervals>
  <catfiltertext>`Все (* )`</catfiltertext>
  <catfilteritemidx>`0`</catfilteritemidx>
  <groupfiltercaps>`Все (* )`#13#10</groupfiltercaps>
@@ -55,13 +55,13 @@
   <type>`12`</type>
   <value>`[90 , 240 , 90 , 60 , 80 , 100 , 110 , 50 , 140]`</value>
  </colwidths>
- <formleft>`233`</formleft>
- <formtop>`194`</formtop>
- <formright>`1687`</formright>
- <formbottom>`846`</formbottom>
+ <formleft>`-2170`</formleft>
+ <formtop>`314`</formtop>
+ <formright>`-716`</formright>
+ <formbottom>`966`</formbottom>
  <formstate>`0`</formstate>
  <formactivemainpage>`0`</formactivemainpage>
  <formactivepage>`0`</formactivepage>
- <formvisible>`0`</formvisible>
+ <formvisible>`1`</formvisible>
 </dbconfig>
 </Header>

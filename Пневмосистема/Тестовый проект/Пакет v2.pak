@@ -1,8 +1,8 @@
 ﻿[Form]
-Rect.L=375
-Rect.T=333
-Rect.R=1402
-Rect.B=738
+Rect.L=-1260
+Rect.T=440
+Rect.R=-233
+Rect.B=845
 ConsoleHeight=69
 WindowState=0
 ColCount=7
@@ -23,7 +23,7 @@ formstyle=0
 restartname=
 notqueryremoveforall=0
 [Files]
-Count=11
+Count=15
 0=Вагон 1 (8)  UDP.prt
 1=Вагон 2 (7) UDP.prt
 2=Вагон 3 (6) UDP.prt
@@ -35,6 +35,10 @@ Count=11
 8=Все вагоны UDP.prt
 9=Все вагоны тест.prt
 10=Все вагоны.prt
+11=Управление 1.prt
+12=Управление 2.prt
+13=Управление 3.prt
+14=Управление 4.prt
 [Active]
 0=0
 1=0
@@ -47,6 +51,10 @@ Count=11
 8=0
 9=0
 10=0
+11=1
+12=1
+13=1
+14=1
 [TimeSync]
 0=1
 1=1
@@ -59,3 +67,7 @@ Count=11
 8=1
 9=1
 10=1
+11=1
+12=1
+13=1
+14=1
